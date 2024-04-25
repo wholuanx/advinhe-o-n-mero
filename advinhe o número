@@ -1,0 +1,20 @@
+import random
+
+
+print("Bem-Vindo ao jogo Adivinhe o Numero!")
+print("Tente adivinhar um numero de 1 a 100.")
+
+
+numero_aleatorio = random.randint(1,100)
+controle = True
+
+while controle:
+    n1= int(input("Digite um numero de 1 a 100:     "))
+
+    if n1 < numero_aleatorio:
+        print("Seu palpite é muito baixo, AUMENTE")
+    elif n1 > numero_aleatorio:
+        print("Seu palpite esta muito alto, ABAIXE")
+    else:
+        print ("Parabens! você acertou o numero")
+        print (f"O numero sorteado é: {numero_aleatorio}")
